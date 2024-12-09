@@ -7,7 +7,7 @@ public class MainPage : BaseContentPage
 	public MainPage()
 	{
 		BackgroundColor = Colors.DarkViolet;
-		Content = new VerticalStackLayout
+		Content = new VerticalStackLayout()
 		{
 			Spacing = 12,
 			BackgroundColor = Colors.LightSteelBlue,
@@ -16,7 +16,7 @@ public class MainPage : BaseContentPage
 				new Image()
 					.Size(500, 250)
 					.Aspect(Aspect.AspectFit)
-					.Source("./Resources/AppIcon/appicon.svg"),
+					.Source("appicon"),
 				
 				new Label()
 					.Text("Hello Maui", Colors.Black)
