@@ -16,7 +16,7 @@ public class MainPage : BaseContentPage
 				new Image()
 					.Size(500, 250)
 					.Aspect(Aspect.AspectFit)
-					.Source("appicon"),
+					.Source("dotnet_bot.png"),
 				
 				new Label()
 					.Text("Hello Maui", Colors.Black)
