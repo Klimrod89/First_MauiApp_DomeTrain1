@@ -54,38 +54,39 @@ public class MainPage : BaseContentPage
 						.Row(Row.Label)
 						.ColumnSpan(All<Column>()),
 
+					new Entry()
+						.Placeholder("First Entry", Colors.DarkGray)
+						.TextColor(Colors.Black)
+						.Row(Row.Entry)
+						.Margin(5)
+						.Column(Column.Entry1),
 
 					new Entry()
-					.Placeholder("First Entry", Colors.DarkGray)
-					.TextColor(Colors.Black)
-					.Row(Row.Entry)
-					.Margin(5)
-					.Column(Column.Entry1),
+						.Placeholder("Second Entry", Colors.DarkGray)
+						.TextColor(Colors.Black)
+						.Row(Row.Entry)
+						.Margin(5)
+						.Column(Column.Entry2),
 
 					new Entry()
-					.Placeholder("Second Entry", Colors.DarkGray)
-					.TextColor(Colors.Black)
-					.Row(Row.Entry)
-					.Margin(5)
-
-					.Column(Column.Entry2),
-
-					new Entry()
-					.Placeholder("Third Entry", Colors.DarkGray)
-					.TextColor(Colors.Black)
-					.Row(Row.Entry)
-					.Margin(5)
-
-					.Column(Column.Entry3),
+						.Placeholder("Third Entry", Colors.DarkGray)
+						.TextColor(Colors.Black)
+						.Row(Row.Entry)
+						.Margin(5)
+						.Column(Column.Entry3),
 
 					new Label { LineBreakMode = LineBreakMode.WordWrap}
-					.Text("LARGE TEXT")
-					.FontSize(100)
-					.TextCenter()
-					.Row(Row.LargeTextEntry)
-					.ColumnSpan(All<Column>())
+						.Text("LARGE TEXT")
+						.FontSize(100)
+						.TextCenter()
+						.Row(Row.LargeTextEntry)
+						.ColumnSpan(All<Column>())
 				}
-			}.Top().CenterHorizontal().Paddings(12).Margins(0, 6, 0, 0)
+			}
+			.Top()
+			.CenterHorizontal()
+			.Paddings(12)
+			.Margins(0, 6, 0, 0)
 		};
 	}
 
